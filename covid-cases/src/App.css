@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ .navigation .nav-Lists{
+  width: 60%;
+  
+}
+
+.nav-Lists ul{
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+ul li{
+  list-style: none;
+}
