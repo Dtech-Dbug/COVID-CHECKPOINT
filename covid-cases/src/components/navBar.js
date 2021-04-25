@@ -4,13 +4,13 @@ export  const NavBar = ()=> {
 
     return (
         <div className='navigation'>
-            <h1>Hello</h1>
+            <h1>CovidApp</h1>
 
             <div className='nav-Lists'>
                 <ul>
-                    <li>About</li>
-                    <li>About</li>
-                    <li>About</li>
+                    <li>Protocols</li>
+                    <li>Analytics</li>
+                    <li>Resources</li>
                 </ul>
             </div>
         </div>

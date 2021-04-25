@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*
+Headings :: font-family: 'Merriweather', serif;
+
+contents : font-family: 'Lato', sans-serif;
+*/
+
 .App {
   text-align: center;
+  background: linear-gradient(to bottom right, rgb(13, 13, 12)30%, rgba(13, 13, 12,0.5));
+  color: white;
 }
 
 .navigation{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px dashed white;
+}
+
+.navigation h1{
+  font-family: 'Merriweather', serif;
 }
  .navigation .nav-Lists{
   width: 60%;
@@ -21,4 +36,39 @@
 
 ul li{
   list-style: none;
+}
+
+.Intro-Component{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 2rem;
+ 
+}
+
+.Image{
+  place-self: center;
+}
+
+.contents{
+  place-self: center;
+}
+
+.Image img{
+  width: 60%;
+  height: auto;
+}
+
+.contents h2{
+  font-family: 'Merriweather', serif;
+}
+
+.contents p{
+  font-family: 'Lato', sans-serif;
+  
+}
+
+button{
+  border: 2px solid white;
+  background: linear-gradient(to bottom right, rgb(13, 13, 12)30%, rgba(13, 13, 12,0.5));
+  color: white;
 }
