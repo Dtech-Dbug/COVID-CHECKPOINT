@@ -65,6 +65,16 @@ export const Analytics = ()=>{
             <div className='analytics-intro'>
                 <h2>Analytics</h2>
 
+                <p>
+                  Enter name of a country to view current covid conditions.
+                </p>
+
+                <p>
+                  <i>
+                    Please note the data may be tentative and may not be 100% acurate.
+                  </i>
+                </p>
+
                 <br/>
                 <input type='text' className='input' placeholder='Search By Country name'></input>
                 <span>
@@ -78,8 +88,10 @@ export const Analytics = ()=>{
                  {items.map(item =>{
 
                  return(
-                   <div>
+                   <div className='data-card'>
                     <img src={item.countryInfo.flag}></img>
+                    <h3>{item.country}</h3>
+                    <h4>Continent : {item.continent}</h4>
                     <li>Population : {item.population}</li>
                     <li>Cases : {item.cases}</li>
                     <li>Cases/ Milion : {item.casesPerOneMillion}</li>
