@@ -80,6 +80,17 @@ button{
 .result-card{
   background: red;
   width: 40vw;
-  height: 30vh;
+  height: auto;
   margin: auto;
+  background: rgba( 214, 201, 201, 0.50 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+border-radius: 10px;
+}
+
+img{
+  height: 9vh;
+  width: auto;
+padding : 2rem 1rem;
 }

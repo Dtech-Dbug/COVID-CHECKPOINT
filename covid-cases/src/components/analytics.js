@@ -78,7 +78,18 @@ export const Analytics = ()=>{
                  {items.map(item =>{
 
                  return(
-                   <li>{item.deaths}</li>
+                   <div>
+                    <img src={item.countryInfo.flag}></img>
+                    <li>Population : {item.population}</li>
+                    <li>Cases : {item.cases}</li>
+                    <li>Cases/ Milion : {item.casesPerOneMillion}</li>
+                    <li>Critical : {item.critical}</li>
+                    <li>Recovered : {item.recovered}</li>
+                    <li>Deaths : {item.deaths}</li>
+                    <li>Today Deaths : {item.todayDeaths}</li>
+                    <li>Today Recovered : {item.todayRecovered}</li>
+                    
+                   </div>
                  )
                  })}
                </ul>
