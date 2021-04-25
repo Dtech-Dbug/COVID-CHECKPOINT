@@ -77,3 +77,9 @@ button{
   background: linear-gradient(to bottom right, rgb(13, 13, 12)30%, rgba(13, 13, 12,0.5));
   color: white;
 }
+.result-card{
+  background: red;
+  width: 40vw;
+  height: 30vh;
+  margin: auto;
+}

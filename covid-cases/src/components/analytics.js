@@ -13,9 +13,11 @@ export const Analytics = ()=>{
           .then(res => res.json())
           .then(
             (result) => {
+             
               setIsLoaded(true);
-              setItems(result);
+             // setItems(result);
               console.log(result)
+              console.log('UseEfect ran , results are ' + result)
             },
             // Note: it's important to handle errors here
             // instead of a catch() block so that we don't swallow
@@ -39,11 +41,22 @@ export const Analytics = ()=>{
         fetch(Url)
         .then(response => response.json())
         .then((data)=> {
+         //setItems(data)
+          //console.log(items)
             console.log(data)
+          var  fetchedData = Object.entries(data)
+          //setItems(fetchedData)
+          console.log('After converting obj to array ' +fetchedData)
             console.log('Country ' + data.country)
+            setItems([data])
+            console.log( data)
             var Cases = data.cases
             var Deaths = data.deaths
+            var Image = data.countryInfo.flag
             console.log(Deaths)
+
+            
+            
             
         })
     }
@@ -58,16 +71,23 @@ export const Analytics = ()=>{
                     <button onClick={test}>Search</button>
                 </span>
 
-                <div className='g'>
-                <ul>
-        {items.map(item => (
-          <li key={item.id}>
-            {item.country} {item.deaths}
-          </li>
-        ))}
-      </ul>
+                <br/>
+
+                <div className='result-card'>
+               <ul>
+                 {items.map(item =>{
+
+                 return(
+                   <li>{item.deaths}</li>
+                 )
+                 })}
+               </ul>
+            
+ 
+          
+          </div>
+
                 
-                </div>
                       
             </div>
         </div>
