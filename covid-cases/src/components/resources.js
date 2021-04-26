@@ -3,8 +3,17 @@ export const Resources=()=>{
     return(
         <div className='Container'>
 
-            <h3>Resources</h3>
+            <h2>Resources</h2>
 
+            <p>
+                A curated list of all the verified leads in particular regions, gathered from Instagram.
+            </p>
+
+            <p> Hope you find this helpful. If you didn't , then please try the link,below.</p>
+
+            <h3>
+            <a href='https://covid19-twitter.in/ '>Twitter Search Covid</a>
+            </h3>
 
             <div className='template-container'> 
             

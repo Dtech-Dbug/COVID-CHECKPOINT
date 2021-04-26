@@ -1,4 +1,11 @@
+import {Link} from 'react-router-dom'
+import {Resources} from './resources'
+
 export  const NavBar = ()=> {
+
+    const style = {
+        textDecoration : 'none'
+    }
 
 
 
@@ -8,9 +15,22 @@ export  const NavBar = ()=> {
 
             <div className='nav-Lists'>
                 <ul>
-                    <li>Protocols</li>
+                    <Link to='/' style={style}>
+                    <li>Home</li>
+                    </Link>
+                    
+                    <Link style={style} to='/analytics'>
                     <li>Analytics</li>
-                    <li>Resources</li>
+                    </Link>
+                    
+                    
+                   
+                   <Link style={style} to='/resources'>
+                   <li>Resources</li>
+                   </Link>
+                   
+                
+                    
                 </ul>
             </div>
         </div>
