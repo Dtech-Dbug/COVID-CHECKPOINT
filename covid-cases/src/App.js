@@ -6,6 +6,7 @@ import {Analytics} from './components/analytics'
 import {Cowin} from './components/cowin'
 import {Resources} from './components/resources'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Footer} from './components/footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/' exact component={Intro}></Route>
       <Route path='/resources' exact component={Resources}></Route>
       <Route path='/analytics' exact component={Analytics}></Route>
+      <Footer/>
 
       </Router>
      
