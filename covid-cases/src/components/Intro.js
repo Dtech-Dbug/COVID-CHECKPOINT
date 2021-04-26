@@ -12,10 +12,14 @@ export const Intro = ()=>{
                 <p>
                     A message for all of you. As the current Pandemic situation is taking a drastic upsurge, being careful and following proper protocols have become important, more than ever.
                 </p>
+                  
 
-                <button>
+                  <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance'>
+                  <button href=''>
                     Read More
                 </button>
+                  </a>
+               
 
                 
             </div>
