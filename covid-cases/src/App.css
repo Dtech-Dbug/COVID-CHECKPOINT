@@ -150,3 +150,18 @@ border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 color: black
 }
+.template{
+  background-color: red;
+  height: 3rem;
+  width: 100%;
+  margin: auto;
+}
+
+.template a{
+  text-decoration: none;
+}
+
+.template-container{
+  display: flex;
+  justify-content: space-around;
+}
