@@ -10,11 +10,12 @@ contents : font-family: 'Lato', sans-serif;
   text-align: center;
   background: linear-gradient(to bottom right, rgb(13, 13, 12)30%, rgba(13, 13, 12,0.5));
   color: white;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
  h2{
   font-family: 'Merriweather', serif;
+  text-decoration: underline;
 }
 
 
@@ -22,7 +23,7 @@ contents : font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px dashed white;
+  border-bottom: 1px solid white;
 }
 
 .navigation h1{
@@ -44,11 +45,13 @@ ul li{
   list-style: none;
 }
 
-.Intro-Component{
-  display: grid;
-  grid-template-columns: 50% 50%;
+.contents{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem 2rem;
- border-bottom: 2px dashed white;
+ border-bottom: 1px solid white;
 }
 
 .Image{
@@ -106,5 +109,44 @@ padding : 2rem 1rem;
 
 .data-card{
   text-align: center;
+  margin: 1rem 0;
+  color: black
   
+}
+
+.announcement{
+  border-bottom : 1px solid white;
+}
+
+
+.vacc-reg-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vacc-reg-info .call-to-action{
+  
+  align-self: center;
+}
+
+.call-to-action a{
+ color: white;
+}
+
+.message a{
+  color: white;
+}
+
+.world-cases-overview {
+  text-align: center;
+  width : 50%;
+  margin: auto;
+  padding:1rem 1rem;
+  background: rgba( 222, 214, 214, 0.50 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.0px );
+-webkit-backdrop-filter: blur( 5.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: black
 }
