@@ -8,6 +8,7 @@ contents : font-family: 'Lato', sans-serif;
 #root{
 
   font-size: 80%;
+  padding: 1rem 1rem;
 }
 
 
@@ -156,13 +157,14 @@ padding : 2rem 1rem;
   width : 50%;
   margin: auto;
   padding:1rem 1rem;
-  background: rgba( 222, 214, 214, 0.50 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.0px );
--webkit-backdrop-filter: blur( 5.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-color: black
+}
+
+.overall-data-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;;
 }
 .template{
   
@@ -206,10 +208,10 @@ a{
   padding: 1rem 1rem;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   #root{
     font-size: 50%;
-    background-color: crimson;
+    background: crimson;
   }
 } 
 

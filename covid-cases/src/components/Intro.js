@@ -60,38 +60,45 @@ export const Intro = ()=>{
              <div className='world-cases-overview'>
                  <h3>WorldWide Stats</h3>
 
-                 <ul>     
+                    
           {items.map(item => {
 
               return(
-                  <div className='data-card'>
-                       <li key={item.id}>
-            Affected Countries: {item.affectedCountries}
-          </li>
+                  <div className='overall-data-card'>
 
-              <li key={item.id}>
-            Cases: {item.cases}
-          </li>
+                    <div className='world-stats'style={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}}>
+                      <h3 style={{color:'grey'}}>
+                        {item.cases}
+                      </h3>
 
-          <li key={item.id}>
-            Recovered: {item.recovered}
-          </li>
+                      <h3>
+                        Cases
+                      </h3>
 
-          <li key={item.id}>
-            Critical: {item.critical}
-          </li>
+                    </div>
+                    
+                    <div className='world-stats'style={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}}>
+                      <h3 style={{color:'green'}}>
+                        {item.recovered}
+                      </h3>
 
-          <li key={item.id}>
-            Deaths: {item.deaths}
-          </li>
+                      <h3>
+                        Recovered
+                      </h3>
 
-          <li key={item.id}>
-            Cases/Million: {item.casesPerOneMillion}
-          </li>
+                    </div>
+                     
+                    <div className='world-stats'style={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}}>
+                      <h3 style={{color:'red'}}>
+                        {item.deaths}
+                      </h3>
 
-          <li key={item.id}>
-            Deaths/Million: {item.deathsPerOneMillion}
-          </li>
+                      <h3>
+                        Deaths
+                      </h3>
+
+                    </div>
+                 
                   </div>
 
               )
@@ -111,7 +118,7 @@ export const Intro = ()=>{
          
           
               })}
-          </ul>
+          
      
              </div>
 
