@@ -16,7 +16,8 @@ contents : font-family: 'Lato', sans-serif;
   text-align: center;
   background: linear-gradient(to bottom right, rgb(13, 13, 12)30%, rgba(13, 13, 12,0.5));
   color: white;
-  padding: 2rem 0;
+  padding: 2rem .2rem;
+  
 }
 
  h2{
@@ -36,6 +37,7 @@ contents : font-family: 'Lato', sans-serif;
 .navigation h1{
   font-family: 'Merriweather', serif;
   color : white;
+  font-size :  1.2rem;
   
 }
  .navigation .nav-Lists{
@@ -55,6 +57,9 @@ contents : font-family: 'Lato', sans-serif;
 ul li{
   list-style: none;
   font-size: .8rem;
+  margin:0 .1rem;
+  padding:.1rem .2rem;
+  
 }
 
 .contents{
@@ -66,9 +71,7 @@ ul li{
  border-bottom: 1px solid white;
 }
 
-.Image{
-  place-self: center;
-}
+
 
 .contents{
   place-self: center;
@@ -79,6 +82,15 @@ ul li{
   height: auto;
 }
 
+.data-card img{
+  height: 9vh;
+  width: auto
+}
+
+.data-card li{
+  list-style: none;
+  font-size: .6rem ;
+}
 .contents h2{
   font-family: 'Merriweather', serif;
 }
@@ -116,7 +128,7 @@ color:black;
 }
 
 img{
-  height: 9vh;
+  height: 90rem;
   width: auto;
 padding : 2rem 1rem;
 }
@@ -213,5 +225,13 @@ a{
     font-size: 50%;
     background: crimson;
   }
+
+
+  .vacc-reg-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
 } 
 

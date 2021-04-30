@@ -14,6 +14,7 @@ function App() {
       <Router>
 
       <NavBar/>
+      
       <Route path='/' exact component={Cowin}></Route>
       <Route path='/' exact component={Intro}></Route>
       <Route path='/resources' exact component={Resources}></Route>

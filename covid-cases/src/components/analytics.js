@@ -84,7 +84,7 @@ export const Analytics = ()=>{
                 <br/>
 
                 <div className='result-card'>
-               <ul>
+               
                  {items.map(item =>{
 
                  return(
@@ -104,7 +104,7 @@ export const Analytics = ()=>{
                    </div>
                  )
                  })}
-               </ul>
+               
             
  
           
