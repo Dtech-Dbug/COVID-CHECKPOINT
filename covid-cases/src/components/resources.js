@@ -5,6 +5,20 @@ export const Resources=()=>{
 
             <h2>Resources</h2>
 
+            <h3>West Bengal Swastho Bhawan Helpline Numbers</h3>
+
+            <h4>
+                1800313444222 
+            </h4>
+
+            <h3>Other Helpline Numbers(WB Govt.)</h3>
+
+            <h4>
+                +91 6291 215 847 ,
+                +91 6290 648 755
+            </h4>
+
+
             <p>
                 A curated list of all the verified leads in particular regions, gathered from Instagram.
             </p>
